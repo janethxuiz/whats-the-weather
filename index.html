@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's The Weather</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="">
+        <div class="row navbar navbar-dark bg-dark">
+            <div class="col-12 text-center">
+                <h1>Whats The Weather</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 bg-light pb-2 pt-3" id="searchResults">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Search for a City:</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="enterCity"
+                                placeholder="Enter city to view weather"><button type="button" id="searchBtn"
+                                class="btn btn-primary"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <ul id="searchHistory" class="list-group"></ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="row ml-2 border border-dark rounded">
+                        <div class="col-sm-12" id="current-weather">
+                            <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                            <p>Temperature:<span class="current" id="temperature"></span></p>
+                            <p>Humidity:<span class="current" id="humidity"></span></p>
+                            <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                            <p>UV index:<span class="current" id="uv-index"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="weatherContent" class="col-9 pb-4 pt-4">
+                    <div class="row pb-3 mr-2 ml-2">
+                        <div id="cityDetail" class="col-12 border rounded px-3 py-3"></div>
+                    </div>
+
+                    <div class="row pb-2 pt-1">
+                        <div class="col-12 ml-2">
+                            <h3>5-Day Forecast:</h3>
+                        </div>
+
+                        <div id="fiveDay" class="row pl-2">
+                            <div class="col-sm-12" id="future-weather">
+                                <h3>5-Day Forecast:</h3>
+                                <div class="row text-light">
+                                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                        <p id="fDate0"></p>
+                                        <p id="fImg0"></p>
+                                        <p>Temp:<span id="fTemp0"></span></p>
+                                        <p>Humidity:<span id="fHumidity0"></span></p>
+                                    </div>
+                                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                        <p id="fDate1"></p>
+                                        <p id="fImg1"></p>
+                                        <p>Temp:<span id="fTemp1"></span></p>
+                                        <p>Humidity:<span id="fHumidity1"></span></p>
+                                    </div>
+                                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                        <p id="fDate2"></p>
+                                        <p id="fImg2"></p>
+                                        <p>Temp:<span id="fTemp2"></span></p>
+                                        <p>Humidity:<span id="fHumidity2"></span></p>
+                                    </div>
+                                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                        <p id="fDate3"></p>
+                                        <p id="fImg3"></p>
+                                        <p>Temp:<span id="fTemp3"></span></p>
+                                        <p>Humidity:<span id="fHumidity3"></span></p>
+                                    </div>
+                                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                                        <p id="fDate4"></p>
+                                        <p id="fImg4"></p>
+                                        <p>Temp:<span id="fTemp4"></span></p>
+                                        <p>Humidity:<span id="fHumidity4"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="./assets/script.js"></script>
+</body>
+
+</html>
