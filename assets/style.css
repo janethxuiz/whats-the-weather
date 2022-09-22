@@ -1,57 +1,72 @@
-h1 {
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    color: #f8f8ff;
-}
-
-#weatherContent {
-    display: none;
-}
-
-.navbar {
-    height: 150px;
-    color: white;
-}
-
-#cityDetail,
-#uvIndexColor,
-li {
-    color: #d693cb;
-}
-
-#searchResults,
-#cityDetail,
-.card {
-    background-color: #d693cb;
-}
-
-#searchResults {
-    height: 100vh;
-}
-
-#fiveDay .card {
-    border: 1px solid white;
-}
-
-#searchHistory li {
-    background-color: #ebdbf0;
-    color: #f8f8ff;
-}
-
-p {
-    color: #767ff8;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Raleway', sans-serif;
-}
-
-h2, h3, h4, h5 {
-    color: #767ff8;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ebdbf0;
-}
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  
+  .description{
+    white-space: pre-wrap;
+  }
+  
+  .time-block{
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+  }
+  
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+    color: white;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06AED5;
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
